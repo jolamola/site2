@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+@import url(http://fonts.googleapis.com/css?family=Sacramento|Chelsea+Market);
 
 /*font-family: 'Roboto', sans-serif;*/
 /* light blue:E4F1FE*/
@@ -96,12 +97,20 @@ h1, h2, h3, h4, h5, h6 {
 	display: block;
 }
 .contact-container:hover {
-	background-color: rgba(0,0,0,0.9);
+	background-color: rgba(0,0,0,1);
 	-webkit-transition: all linear 0.1s;
 	-moz-transition: all linear 0.1s;
 	transition: all linear 0.1s;
 }
-
+.contact-container:hover h1 {
+	opacity: 0;
+}
+.contact-title {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	color: #000;
+	font-size: 5em;
+}
 /*Buttons and Icons*/
 .btn-visit {
 	font-family: 'Ubuntu', sans-serif;
@@ -126,13 +135,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fa-icon-custom {
-	color: #31E7B6;
-	margin-right: 10px;
+	color: #fff;
+	margin: 0 5px;
 	-webkit-transition: all linear 0.2s;
 	-moz-transition: all linear 0.2s;
 	transition: all linear 0.2s;
 }
 
 .fa-icon-custom:hover {
-	color: #E4F1FE;
+	color: #31E7B6;
 }
+
+
+
+
+
+
+
+
+
