@@ -7,61 +7,103 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+
 <body>
-	<div class="page" id="projects">
-		<div class="container-fluid">
-			<div class="row">
+	<div id="intro">
+		<div class="intro-text">
+			<h1 class="intro-name fadeInDown animated">Daniel Kim</h1>
+			<h5 class="intro-desc fadeInDown animated">frontend developer + photographer</h5>
+		</div>
 
-				<section class="col-sm-6" id="aboutme">
-					<div class="project-container">
-						<div class="project">
-							<span class="project-title">About Me</span><br>
-							<span class="project-desc">Frontend web developer with a passion for building clean and accessible web experiences.</span><br>
-							<span class="project-build">mrdanielkim@gmail.com | 213.500.6353 | 
-							<a href="https://github.com/jolamola"><i class="fa fa-github-alt fa-1x fa-icon-custom"></i></a> | 
-							<a href="http://www.linkedin.com/in/mrdanielkim"><i class="fa fa-linkedin fa-1x fa-icon-custom"></i></a></span><br><br>
+		<div id="downIcon_container">
+			<div id="downIcon" class="zoomIn animated">
+				<p class="animated pulse infinite"><i class="fa fa-chevron-down fa-2x"></i></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="body_content">
+		<div class="page" id="projects">
+			<div id="section1" class="container-fluid">
+				<div class="row">
+
+					<section class="col-sm-6" id="aboutme">
+						<div class="project-container">
+							<div class="project">
+								<span class="project-title">About Me</span><br>
+								<span class="project-desc">Frontend web developer with a passion for building clean and accessible web experiences.</span><br>
+								<span class="project-build">
+									mrdanielkim@gmail.com | 213.500.6353 | 
+									<a href="https://github.com/jolamola"><i class="fa fa-github-alt fa-1x fa-icon-custom"></i></a> | 
+									<a href="http://www.linkedin.com/in/mrdanielkim"><i class="fa fa-linkedin fa-1x fa-icon-custom"></i></a>
+								</span> <br><br>
+							</div>
 						</div>
-					</div>
-				</section>
+					</section> <!-- About me -->
 
-				<section class="col-sm-6" id="yeschef">
-					<div class="project-container">
-						<div class="project">
-							<span class="project-title">yes!chef</span><br>
-							<span class="project-desc">store your favorite recipes</span><br>
-							<span class="project-build">built with: Rails, MongoDB, Bootstrap</span><br><br>
-							<a href="https://yeschef.herokuapp.com" class="btn-visit"> Visit Me </a>
+					<section class="col-sm-6" id="photos">
+						<div class="project-container">
+							<div class="project">
+								<span class="project-title">Photography</span>
+								<span class="project-desc">A sample of my work</span><br><br>
+								<a href="#" class="btn-visit"> Visit Me </a>
+							</div>
 						</div>
-					</div>
-				</section>
+					</section> <!-- photography -->
 
-
-				<section class="col-sm-6" id="fi">
-					<div class="project-container">
-						<div class="project">
-							<span class="project-title">friendindeed</span>
-							<span class="project-desc">spread kindness through good deeds></span><br>
-							<span class="project-build">built with: Rails, PostgreSQL, Bootstrap</span><br><br>
-							<a href="https://friendindeed.herokuapp.com" class="btn-visit"> Visit Me </a>
+					<section class="col-sm-6" id="fi">
+						<div class="project-container">
+							<div class="project">
+								<span class="project-title">friendindeed</span>
+								<span class="project-desc">spread kindness through good deeds</span><br>
+								<span class="project-build">built with: Rails, PostgreSQL, Bootstrap</span><br><br>
+								<a href="https://friendindeed.herokuapp.com" class="btn-visit"> Visit Me </a>
+							</div>
 						</div>
-					</div>
-				</section>
+					</section> <!-- friendindeed project -->
 
-				<section class="col-sm-6" id="photos">
-					<div class="project-container">
-						<div class="project">
-							<span class="project-title">Photography</span>
-							<span class="project-desc">A sample of my work</span><br>
-							<!-- <span class="project-build">built with: Rails, PostgreSQL, Bootstrspan</span><br><br> -->
-							<a href="#" class="btn-visit"> Visit Me </a>
+					<section class="col-sm-6" id="yeschef">
+						<div class="project-container">
+							<div class="project">
+								<span class="project-title">yes!chef</span><br>
+								<span class="project-desc">store your favorite recipes</span><br>
+								<span class="project-build">built with: Rails, MongoDB, Bootstrap</span><br><br>
+								<a href="https://yeschef.herokuapp.com" class="btn-visit"> Visit Me </a>
+							</div>
 						</div>
-					</div>
-				</section>
+					</section> <!-- yeschef project -->
 
-		
+				</div> <!-- row -->
+			</div> <!-- container-fluid -->
+
+
+		</div> <!-- page/projects -->
+	</div> <!-- slide 1 -->
+
+	<div id="footer">
+		<div id="footer_content" class="container">
+			<div id="contactme">
+				<p>
+					<i class="fa fa-quote-left"></i>&nbsp;&nbsp;
+					los angeles, ca | mrdanielkim@gmail.com | 213-500-6353 | 
+					<a href="https://github.com/jolamola"><i class="fa fa-github-alt fa-icon-custom"></i></a> | 
+					<a href="http://www.linkedin.com/in/mrdanielkim"><i class="fa fa-linkedin fa-icon-custom"></i></a>&nbsp;&nbsp;
+					<i class="fa fa-quote-right"></i>
+				</p>
+			</div>
+			<div id="contactme_proj">
+				<a href="#">friendindeed</a>
+				<a href="#">yes!chef</a>
+				<a href="#">photography</a>
+
+
 
 
 
@@ -69,9 +111,18 @@
 
 
 			</div>
+
+
+
+
+
+
 		</div>
 
 	</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 
 </html>

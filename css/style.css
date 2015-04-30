@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
 @import url(http://fonts.googleapis.com/css?family=Sacramento|Chelsea+Market);
 
+
 /*font-family: 'Roboto', sans-serif;*/
 /* light blue:E4F1FE*/
 
@@ -8,15 +9,86 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
+body {
+	width: 100%;
+	height: 100%;
+}
+
+/***************** LANDING PAGE *********************/
+@media(max-width: 505px) {
+	.intro-text {
+		padding: 150px 0 0 0;
+		font-size: .8em;
+	}
+}
+
+@media(max-width: 768px) {
+	.intro-text {
+		padding: 200px 0 0 0;
+		font-size: .8em;
+	}
+}
+
+
+#intro {
+	position: relative;
+	background: radial-gradient(circle, rgba(0,0,0,.3), rgba(0,0,0,.8)),url('../images/MNO_6142.jpg') center center no-repeat fixed;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+#intro h1 {
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	color: #fff;
+	font-size: 10em;
+}
+
+#intro h5 {
+	text-align: center;
+	color: #3ee4c4;
+	font-size: 2em;
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s;
+}
+.intro-text {
+	padding: 260px 0 260px 0;
+	/*vertical-align: middle;*/
+}
+#downIcon_container {
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	text-align: center;
+
+}
+#downIcon_container p {
+	font-size: 2em;
+	color: #fff;
+}
+#downIcon {
+	line-height: 0;
+	-webkit-animation-delay: .8s;
+	animation-delay: .8s;
+}
+
+
+
+
+/************** PROJECTS/NAV *********************/
 .project-container {
 	min-height: 400px;
 }
-
+#body_content {
+	position: relative;
+	box-shadow: 0 0px 36px 0px rgba(0,0,0,0.8);
+}
 #projects section  {
 	padding:0;
 }
 #yeschef {
-	background: url("../images/yc.jpg");
+	background: url("../images/yc4.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -93,27 +165,61 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: -15px;
 }
 
-/*Buttons and Icons*/
+/****************** FOOTER ******************/
+
+#footer{
+	background-color: #2F343A;
+	height: 200px;
+}
+#footer h1 {
+	color: #31e7b6;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 4em;
+	text-align: center;
+	padding-top: 50px;
+}
+#contactme p {
+	font-size: 1.5em;
+	color: #fff;
+	text-align: center;
+	margin-top: 50px;
+}
+#contactme_proj {
+	margin-top: 10px;
+	display: block;
+	text-align: center;
+}
+#contactme_proj a {
+	font-size: 1.5em;
+	color: #31e7b6;
+	margin-right: 10px;
+}
+#contactme_proj a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/****************** buttons and icons ******************/
 .btn-visit,
 .btn-visit:focus {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 400;
-	color: #31E7B6;
+	color: #3ee4c4;
 	background: transparent;
 	font-size: 20px;
-	border: 1px solid #31E7B6;
+	border: 1px solid #3ee4c4;
 	border-radius: 2px;	
-	padding: 5px 25px;
+	padding: 15px 30px;
 	text-transform: uppercase;
 	text-decoration: none;
-	box-shadow: inset 0 0 0 0 #31E7B6;
-	-webkit-transition: all linear 0.2s;
-	-moz-transition: all linear 0.2s;
-	transition: all linear 0.2s;
+	box-shadow: inset 0 0 0 0 #3ee4c4;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	transition: all linear 0.3s;
 }
 
 .btn-visit:hover  {
-	box-shadow: inset 0 0 0 50px #31E7B6;
+	box-shadow: inset 100px -100px 0 0 #3ee4c4;
 	color: #000;
 	text-decoration: none;
 }
@@ -127,14 +233,59 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fa-icon-custom:hover {
-	color: #31E7B6;
+	color: #3ee4c4;
 }
 
+/**************** Animated Button ***********************/
+.button_box {
+	width: 150px;
+	height: 60px;
+	position: relative;
+	/*overflow: hidden;*/
+	background-color: transparent;
+}
+.button_box p {
+	font-size: 2em;
+	color: white;
+	margin: 10px 0 0 25px;
+}
 
-
-
-
-
-
-
-
+svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.button_box svg line.top,
+.button_box svg line.bottom {
+	stroke-width: 3;
+	stroke: #3ee4c4;
+	fill: none;
+	stroke-dasharray: 150;
+	-webkit-transition: -webkit-transform .5s ease-out;
+	transition: transform .5s ease-out;
+}
+.button_box svg line.left,
+.button_box svg line.right {
+	stroke-width: 3;
+	stroke: #3ee4c4;
+	fill: none;
+	stroke-dasharray: 60;
+	-webkit-transition: -webkit-transform .5s ease-out;
+	transition: transform .5s ease-out;
+}
+.button_box:hover svg line.top {
+	-webkit-transform: translateX(-340px);
+	transform: translateX(-340px);
+}
+.button_box:hover svg line.bottom {
+	-webkit-transform: translateX(340px);
+	transform: translateX(340px);
+}
+.button_box:hover svg line.right {
+	-webkit-transform: translateY(-60px);
+	transform: translateY(-60px);
+}
+.button_box:hover svg line.left {
+	-webkit-transform: translateY(60px);
+	transform: translateY(60px);
+}
