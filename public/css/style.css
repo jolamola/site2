@@ -15,32 +15,57 @@ body {
 }
 
 /***************** LANDING PAGE *********************/
-@media(max-width: 768px) {
+@media(max-width: 991px) {
 	.intro-text {
 		padding: 150px 0 0 0;
-		font-size: .8em;
+		font-size:  80%;
 	}
-
-
-
-
-
-
+	.collapse_project {
+		position: relative;
+		text-align: center;
+		background-color: #303030;
+		height: 250px;
+		padding: 15px 15px 15px 30px;
+	}
+	.project-container:hover .project {
+		opacity: 0;
+	}
+	.project-container:hover {
+		background-color: rgba(0,0,0,0.0);
+	}
 }
-/*
-@media(min-width: 768px) {
+
+@media(min-width: 992px) {
 	.intro-text {
 		padding: 200px 0 0 0;
 		font-size: .8em;
 	}
-}*/
+	.collapse_project {
+		display: none;
+	}
+	.project-container:hover .project {
+		opacity: 1;
+		color: white;
+		display: block;
+	}
+	.project-container:hover {
+		background-color: rgba(0,0,0,0.8);
+		-webkit-transition: all linear 0.1s;
+		-moz-transition: all linear 0.1s;
+		transition: all linear 0.1s;
+	}
+}
+
+.menuContainer {
+
+}
 
 
 #intro {
 	position: relative;
 	background: radial-gradient(circle, rgba(0,0,0,.3), rgba(0,0,0,.8)),url('../images/site2_bg.jpg') center center no-repeat fixed;
 	background-size: cover;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 }
 
@@ -135,178 +160,189 @@ body {
 	min-height: 400px;
 }
 
-.project-container:hover .project {
+/*.project-container:hover .project {
 	opacity: 1;
 	color: white;
 	display: block;
-}
+	}*/
 
-.project-container:hover {
+/*.project-container:hover {
 	background-color: rgba(0,0,0,0.8);
 	-webkit-transition: all linear 0.1s;
 	-moz-transition: all linear 0.1s;
 	transition: all linear 0.1s;
-}
+	}*/
 
-.project-title {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 700;
-	color: #31E7B6;
-	font-size: 4em;
-	border-bottom: 2px solid #31E7B6;
-}
+	.project-title {
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: 700;
+		color: #31E7B6;
+		font-size: 4em;
+		border-bottom: 2px solid #31E7B6;
+	}
 
-.project-desc {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 500;
-	color: #E4F1FE;
-	font-size: 2em;
-	line-height: 1.2em;
-	display: block;
-	margin-top: 10px;
-}
+	.project-desc {
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: 500;
+		color: #E4F1FE;
+		font-size: 2em;
+		line-height: 1.2em;
+		display: block;
+		margin-top: 10px;
+	}
 
-.project-build {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 300;
-	color: #E4F1FE;
-	font-size: 1.5em;
-	display: block;
-	margin-top: -15px;
-}
+	.project-build {
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: 300;
+		color: #E4F1FE;
+		font-size: 1.5em;
+		display: block;
+		margin-top: -15px;
+	}
 
-/****************** FOOTER ******************/
+@media(max-width: 991px) {
+	.project-title {
+		font-size: 2em;
+	}
+	.project-desc {
+		font-size: 1.5em;
+	}
+	.project-build {
+		font-size: 1em;
+	}
 
-#footer{
-	background-color: #2F343A;
-	height: 200px;
-}
-#footer h1 {
-	color: #31e7b6;
-	font-family: "Ubuntu", sans-serif;
-	font-size: 4em;
-	text-align: center;
-	padding-top: 50px;
-}
-#contactme p {
-	font-size: 1.5em;
-	color: #fff;
-	text-align: center;
-	margin-top: 50px;
-}
-#contactme_proj {
-	margin-top: 10px;
-	display: block;
-	text-align: center;
-}
-#contactme_proj a {
-	font-size: 1.5em;
-	color: #31e7b6;
-	margin-right: 10px;
-}
-#contactme_proj a:hover {
-	color: #fff;
-	text-decoration: none;
-}
+	/****************** FOOTER ******************/
 
-/****************** buttons and icons ******************/
-.btn-visit,
-.btn-visit:focus {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 400;
-	color: #3ee4c4;
-	background: transparent;
-	font-size: 20px;
-	border: 1px solid #3ee4c4;
-	border-radius: 2px;	
-	padding: 15px 30px;
-	text-transform: uppercase;
-	text-decoration: none;
-	box-shadow: inset 0 0 0 0 #3ee4c4;
-	-webkit-transition: all linear 0.3s;
-	-moz-transition: all linear 0.3s;
-	transition: all linear 0.3s;
-}
+	#footer{
+		background-color: #2F343A;
+		height: 200px;
+	}
+	#footer h1 {
+		color: #31e7b6;
+		font-family: "Ubuntu", sans-serif;
+		font-size: 4em;
+		text-align: center;
+		padding-top: 50px;
+	}
+	#contactme p {
+		font-size: 1.5em;
+		color: #fff;
+		text-align: center;
+		margin-top: 50px;
+	}
+	#contactme_proj {
+		margin-top: 10px;
+		display: block;
+		text-align: center;
+	}
+	#contactme_proj a {
+		font-size: 1.5em;
+		color: #31e7b6;
+		margin-right: 10px;
+	}
+	#contactme_proj a:hover {
+		color: #fff;
+		text-decoration: none;
+	}
 
-.btn-visit:hover  {
-	box-shadow: inset 100px -100px 0 0 #3ee4c4;
-	color: #000;
-	text-decoration: none;
-}
+	/****************** buttons and icons ******************/
+	.btn-visit,
+	.btn-visit:focus {
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: 400;
+		color: #3ee4c4;
+		background: transparent;
+		font-size: 20px;
+		border: 1px solid #3ee4c4;
+		border-radius: 2px;	
+		padding: 15px 30px;
+		text-transform: uppercase;
+		text-decoration: none;
+		box-shadow: inset 0 0 0 0 #3ee4c4;
+		-webkit-transition: all linear 0.3s;
+		-moz-transition: all linear 0.3s;
+		transition: all linear 0.3s;
+	}
 
-.fa-icon-custom {
-	color: #fff;
-	margin: 0 5px;
-	-webkit-transition: all linear 0.2s;
-	-moz-transition: all linear 0.2s;
-	transition: all linear 0.2s;
-}
+	.btn-visit:hover  {
+		box-shadow: inset 100px -100px 0 0 #3ee4c4;
+		color: #000;
+		text-decoration: none;
+	}
 
-.fa-icon-custom:hover {
-	color: #3ee4c4;
-}
+	.fa-icon-custom {
+		color: #fff;
+		margin: 0 5px;
+		-webkit-transition: all linear 0.2s;
+		-moz-transition: all linear 0.2s;
+		transition: all linear 0.2s;
+	}
 
-/**************** Animated Button ***********************/
-.button_box {
-	width: 150px;
-	height: 60px;
-	position: relative;
-	/*overflow: hidden;*/
-	background-color: transparent;
-}
-.button_box p {
-	font-size: 2em;
-	color: white;
-	margin: 10px 0 0 25px;
-}
+	.fa-icon-custom:hover {
+		color: #3ee4c4;
+	}
 
-svg {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.button_box svg line.top,
-.button_box svg line.bottom {
-	stroke-width: 3;
-	stroke: #3ee4c4;
-	fill: none;
-	stroke-dasharray: 150;
-	-webkit-transition: -webkit-transform .5s ease-out;
-	transition: transform .5s ease-out;
-}
-.button_box svg line.left,
-.button_box svg line.right {
-	stroke-width: 3;
-	stroke: #3ee4c4;
-	fill: none;
-	stroke-dasharray: 60;
-	-webkit-transition: -webkit-transform .5s ease-out;
-	transition: transform .5s ease-out;
-}
-.button_box:hover svg line.top {
-	-webkit-transform: translateX(-340px);
-	transform: translateX(-340px);
-}
-.button_box:hover svg line.bottom {
-	-webkit-transform: translateX(340px);
-	transform: translateX(340px);
-}
-.button_box:hover svg line.right {
-	-webkit-transform: translateY(-60px);
-	transform: translateY(-60px);
-}
-.button_box:hover svg line.left {
-	-webkit-transform: translateY(60px);
-	transform: translateY(60px);
-}
+	/**************** Animated Button ***********************/
+	.button_box {
+		width: 150px;
+		height: 60px;
+		position: relative;
+		/*overflow: hidden;*/
+		background-color: transparent;
+	}
+	.button_box p {
+		font-size: 2em;
+		color: white;
+		margin: 10px 0 0 25px;
+	}
 
-/*gif for load screen*/
-.loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url('../images/ajax_loader_gray_64.gif') center no-repeat #fff;
-}
+	svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.button_box svg line.top,
+	.button_box svg line.bottom {
+		stroke-width: 3;
+		stroke: #3ee4c4;
+		fill: none;
+		stroke-dasharray: 150;
+		-webkit-transition: -webkit-transform .5s ease-out;
+		transition: transform .5s ease-out;
+	}
+	.button_box svg line.left,
+	.button_box svg line.right {
+		stroke-width: 3;
+		stroke: #3ee4c4;
+		fill: none;
+		stroke-dasharray: 60;
+		-webkit-transition: -webkit-transform .5s ease-out;
+		transition: transform .5s ease-out;
+	}
+	.button_box:hover svg line.top {
+		-webkit-transform: translateX(-340px);
+		transform: translateX(-340px);
+	}
+	.button_box:hover svg line.bottom {
+		-webkit-transform: translateX(340px);
+		transform: translateX(340px);
+	}
+	.button_box:hover svg line.right {
+		-webkit-transform: translateY(-60px);
+		transform: translateY(-60px);
+	}
+	.button_box:hover svg line.left {
+		-webkit-transform: translateY(60px);
+		transform: translateY(60px);
+	}
+
+	/*gif for load screen*/
+	.loader {
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background: url('../images/ajax_loader_gray_64.gif') center no-repeat #fff;
+	}
