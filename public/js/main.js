@@ -2,10 +2,9 @@
 	// Wait for window load
 	$(window).load(function() {
 		// Animate loader off screen
-		$(".loader").fadeOut("fast");
+		$(".loader").fadeOut("fast",function(){
+			$("#intro .intro-text h1").addClass('fadeInDown animated')
+		});
 
 	});
 
-	$(document).ready(function(){
-				$("body").addClass(".intro");
-	});
