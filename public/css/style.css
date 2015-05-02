@@ -1,10 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Sacramento|Chelsea+Market);
 
-
-/*font-family: 'Roboto', sans-serif;*/
-/* light blue:E4F1FE*/
-
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
@@ -15,13 +11,12 @@ body {
 }
 
 /***************** LANDING PAGE *********************/
+
 @media(max-width: 991px) {
 	#intro {
 		position: relative;
 		background: radial-gradient(circle, rgba(0,0,0,.3), rgba(0,0,0,.8)),url('../images/site2_bg.jpg') center no-repeat;
 		background-size: cover;
-		/*height: 100%;*/
-		/*width: 100%;*/
 	}
 	.intro-text {
 		padding: 220px 0 240px 0;
@@ -114,9 +109,6 @@ body {
 	-webkit-animation-delay: .8s;
 	animation-delay: .8s;
 }
-
-
-
 
 /************** PROJECTS/NAV *********************/
 
@@ -310,46 +302,6 @@ body {
 	font-size: 2em;
 	color: white;
 	margin: 10px 0 0 25px;
-}
-
-svg {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.button_box svg line.top,
-.button_box svg line.bottom {
-	stroke-width: 3;
-	stroke: #3ee4c4;
-	fill: none;
-	stroke-dasharray: 150;
-	-webkit-transition: -webkit-transform .5s ease-out;
-	transition: transform .5s ease-out;
-}
-.button_box svg line.left,
-.button_box svg line.right {
-	stroke-width: 3;
-	stroke: #3ee4c4;
-	fill: none;
-	stroke-dasharray: 60;
-	-webkit-transition: -webkit-transform .5s ease-out;
-	transition: transform .5s ease-out;
-}
-.button_box:hover svg line.top {
-	-webkit-transform: translateX(-340px);
-	transform: translateX(-340px);
-}
-.button_box:hover svg line.bottom {
-	-webkit-transform: translateX(340px);
-	transform: translateX(340px);
-}
-.button_box:hover svg line.right {
-	-webkit-transform: translateY(-60px);
-	transform: translateY(-60px);
-}
-.button_box:hover svg line.left {
-	-webkit-transform: translateY(60px);
-	transform: translateY(60px);
 }
 
 /*gif for load screen*/
