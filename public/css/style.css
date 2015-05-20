@@ -10,6 +10,13 @@ body {
 	height: 100%;
 }
 
+.resume_link {
+	color: white;
+}
+.resume_link:hover {
+	color: #3ee4c4;
+	text-decoration: none;
+}
 /***************** LANDING PAGE *********************/
 
 @media(max-width: 991px) {
