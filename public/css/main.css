@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Sacramento|Chelsea+Market);
+/*    Colors      */
+/*     Fonts       */
+section#intro {
+  position: relative;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../images/site2_bg.jpg") center center no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%; }
+  section#intro div.intro-text {
+    padding: 260px 0; }
+    section#intro div.intro-text h1.intro-name {
+      font-family: "Ubuntu", sans-serif;
+      text-align: center;
+      color: #fff;
+      font-size: 10em; }
+      @media only screen and (max-width: 991px) {
+        section#intro div.intro-text h1.intro-name {
+          font-size: 7em; } }
+    section#intro div.intro-text h5.intro-desc {
+      text-align: center;
+      color: #3ee4c4;
+      font-size: 3em;
+      -webkit-animation-delay: 0.4s;
+      animation-delay: 0.4s; }
+      @media only screen and (max-width: 991px) {
+        section#intro div.intro-text h5.intro-desc {
+          font-size: 2em; } }
+  section#intro div#downIcon_container {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    text-align: center; }
+    section#intro div#downIcon_container #downIcon {
+      line-height: 0;
+      -webkit-animation-delay: 0.8s;
+      animation-delay: 0.8s; }
+      section#intro div#downIcon_container #downIcon i {
+        font-size: 3em;
+        color: #fff; }
+
+/*     spit them bg images out!     */
+#aboutme {
+  background: url("../images/aboutme.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto; }
+
+#yc4 {
+  background: url("../images/yc4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto; }
+
+#fi {
+  background: url("../images/fi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto; }
+
+#photos {
+  background: url("../images/photos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto; }
+
+section#project-content {
+  position: relative;
+  padding: 0;
+  box-shadow: 0 0px 36px 0px rgba(0, 0, 0, 0.8); }
+  section#project-content div.menuContainer {
+    padding: 0; }
+    section#project-content div.menuContainer div.project-container {
+      min-height: 400px; }
+      section#project-content div.menuContainer div.project-container:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        -webkit-transition: all linear 0.1s;
+        -moz-transition: all linear 0.1s;
+        transition: all linear 0.1s; }
+        @media only screen and (max-width: 991px) {
+          section#project-content div.menuContainer div.project-container:hover {
+            background-color: transparent; } }
+        section#project-content div.menuContainer div.project-container:hover div.project {
+          opacity: 1;
+          display: block; }
+          @media only screen and (max-width: 991px) {
+            section#project-content div.menuContainer div.project-container:hover div.project {
+              opacity: 0; } }
+      section#project-content div.menuContainer div.project-container div.project {
+        opacity: 0;
+        padding: 50px 50px 0 50px; }
+        section#project-content div.menuContainer div.project-container div.project span.project-title {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 700;
+          font-size: 3em;
+          color: #3ee4c4;
+          border-bottom: 2px solid #3ee4c4; }
+          @media only screen and (max-width: 991px) {
+            section#project-content div.menuContainer div.project-container div.project span.project-title {
+              font-size: 2em; } }
+        section#project-content div.menuContainer div.project-container div.project span.project-desc {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 500;
+          font-size: 2em;
+          color: #E4F1FE;
+          line-height: 1.2em;
+          display: block;
+          margin-top: 10px; }
+          @media only screen and (max-width: 991px) {
+            section#project-content div.menuContainer div.project-container div.project span.project-desc {
+              font-size: 1.5em; } }
+        section#project-content div.menuContainer div.project-container div.project span.project-build {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 300;
+          font-size: 1.5em;
+          color: #E4F1FE;
+          display: block;
+          margin-top: -15px; }
+          @media only screen and (max-width: 991px) {
+            section#project-content div.menuContainer div.project-container div.project span.project-build {
+              font-size: 1em; } }
+        section#project-content div.menuContainer div.project-container div.project a {
+          color: #3ee4c4; }
+          section#project-content div.menuContainer div.project-container div.project a i {
+            color: #E4F1FE; }
+            section#project-content div.menuContainer div.project-container div.project a i:hover {
+              color: #3ee4c4;
+              -webkit-transition: all linear 0.2s;
+              -moz-transition: all linear 0.2s;
+              transition: all linear 0.2s; }
+        section#project-content div.menuContainer div.project-container div.project .btn-main,
+        section#project-content div.menuContainer div.project-container div.project .btn-main:focus {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 400;
+          font-color: #3ee4c4;
+          font-size: 20px;
+          background: transparent;
+          border: 1px solid #3ee4c4;
+          border-radius: 2px;
+          padding: 15px 30px;
+          text-transform: uppercase;
+          text-decoration: none;
+          box-shadow: inset 0 0 0 0 #3ee4c4;
+          -webkit-transition: all linear 0.2s;
+          -moz-transition: all linear 0.2s;
+          transition: all linear 0.2s; }
+          section#project-content div.menuContainer div.project-container div.project .btn-main:hover,
+          section#project-content div.menuContainer div.project-container div.project .btn-main:focus:hover {
+            box-shadow: inset 100px -100px 0 0 #3ee4c4;
+            color: #000;
+            text-decoration: none; }
+  @media only screen and (min-width: 992px) {
+    section#project-content div.collapse_project {
+      display: none; } }
+  @media only screen and (max-width: 991px) {
+    section#project-content div.collapse_project {
+      position: relative;
+      text-align: center;
+      background-color: #303030;
+      height: 250px;
+      padding: 15px 15px 15px 30px; } }
+  section#project-content div.collapse_project span.project-title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: #3ee4c4;
+    border-bottom: 2px solid #3ee4c4; }
+    @media only screen and (max-width: 991px) {
+      section#project-content div.collapse_project span.project-title {
+        font-size: 2em; } }
+  section#project-content div.collapse_project span.project-desc {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: #E4F1FE;
+    line-height: 1.2em;
+    display: block;
+    margin-top: 10px; }
+    @media only screen and (max-width: 991px) {
+      section#project-content div.collapse_project span.project-desc {
+        font-size: 1.5em; } }
+  section#project-content div.collapse_project span.project-build {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #E4F1FE;
+    display: block;
+    margin-top: -15px; }
+    @media only screen and (max-width: 991px) {
+      section#project-content div.collapse_project span.project-build {
+        font-size: 1em; } }
+  section#project-content div.collapse_project a {
+    color: #3ee4c4; }
+    section#project-content div.collapse_project a i {
+      color: #E4F1FE; }
+      section#project-content div.collapse_project a i:hover {
+        color: #3ee4c4;
+        -webkit-transition: all linear 0.2s;
+        -moz-transition: all linear 0.2s;
+        transition: all linear 0.2s; }
+  section#project-content div.collapse_project .btn-main,
+  section#project-content div.collapse_project .btn-main:focus {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-color: #3ee4c4;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid #3ee4c4;
+    border-radius: 2px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #3ee4c4;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    transition: all linear 0.2s; }
+    section#project-content div.collapse_project .btn-main:hover,
+    section#project-content div.collapse_project .btn-main:focus:hover {
+      box-shadow: inset 100px -100px 0 0 #3ee4c4;
+      color: #000;
+      text-decoration: none; }
+
+/*       GENERAL         */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+/*# sourceMappingURL=main.css.map */

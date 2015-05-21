@@ -1,14 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
-@import url(https://fonts.googleapis.com/css?family=Sacramento|Chelsea+Market);
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
 body {
 	width: 100%;
 	height: 100%;
-}
+}*/
 
 .resume_link {
 	color: white;
@@ -27,40 +25,40 @@ body {
 		width: 100%;
 	}
 	.intro-text {
-		padding: 220px 0 240px 0;
+		/*padding: 220px 0 240px 0;*/
 	}
 
 	#intro .intro-text h1 {
 		font-family: 'Ubuntu', sans-serif;
 		text-align: center; fixed
 		color: #fff;
-		font-size: 4em;
+		/*font-size: 4em;*/
 	}
 
 	#intro .intro-text h5 {
 		text-align: center;
 		color: #3ee4c4;
-		font-size: 2em;
+		/*font-size: 2em;*/
 		-webkit-animation-delay: .4s;
 		animation-delay: .4s;
 	}
 	.collapse_project {
-		position: relative;
+/*		position: relative;
 		text-align: center;
 		background-color: #303030;
 		height: 250px;
-		padding: 15px 15px 15px 30px;
+		padding: 15px 15px 15px 30px;*/
 	}
 	.project-container:hover .project {
-		opacity: 0;
+		/*opaity: 0;*/
 	}
 	.project-container:hover {
-		background-color: rgba(0,0,0,0.0);
+		/*background-color: rgba(0,0,0,0.0);*/
 	}
 }
 
 @media(min-width: 992px) {
-	#intro {
+/*	#intro {
 		position: relative;
 		background: radial-gradient(circle, rgba(0,0,0,.3), rgba(0,0,0,.8)),url('../images/site2_bg.jpg') center center no-repeat fixed;
 		background-size: cover;
@@ -84,46 +82,46 @@ body {
 		-webkit-transition: all linear 0.1s;
 		-moz-transition: all linear 0.1s;
 		transition: all linear 0.1s;
-	}
+	}*/
 }
 
 #intro h1 {
-	font-family: 'Ubuntu', sans-serif;
+/*	font-family: 'Ubuntu', sans-serif;
 	text-align: center;
 	color: #fff;
-	font-size: 10em;
+	font-size: 10em;*/
 }
 
 #intro h5 {
-	text-align: center;
+/*	text-align: center;
 	color: #3ee4c4;
 	font-size: 3em;
 	-webkit-animation-delay: .4s;
-	animation-delay: .4s;
+	animation-delay: .4s;*/
 }
-#downIcon_container {
+/*#downIcon_container {
 	position: absolute;
 	width: 100%;
 	bottom: 5px;
 	text-align: center;
 
-}
+}*/
 #downIcon_container p {
-	font-size: 2em;
-	color: #fff;
+/*	font-size: 2em;
+	color: #fff;*/
 }
-#downIcon {
+/*#downIcon {
 	line-height: 0;
 	-webkit-animation-delay: .8s;
 	animation-delay: .8s;
-}
+}*/
 
 /************** PROJECTS/NAV *********************/
 
 #body_content {
-	position: relative;
+/*	position: relative;
 	padding: 0;
-	box-shadow: 0 0px 36px 0px rgba(0,0,0,0.8);
+	box-shadow: 0 0px 36px 0px rgba(0,0,0,0.8);*/
 }
 
 #yeschef {
@@ -143,11 +141,11 @@ body {
 }
 
 #aboutme {
-	background: url("../images/aboutme.jpg");
+/*	background: url("../images/aboutme.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: auto;
+	height: auto;*/
 }
 #photos {
 	background: url("../images/photos.jpg");
@@ -158,28 +156,30 @@ body {
 }
 
 .project{
-	opacity: 0;
+/*	opacity: 0;
 	padding-top: 50px;
 	padding-left: 50px;
 	padding-right: 50px;
-}
+*/}
+
+
 /*affects hover bg color*/
 .box  {
 	padding:0;
 }
 .project-container {
-	min-height: 400px;
+/*	min-height: 400px;*/
 }
 
-.project-title {
+/*.project-title {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 700;
 	color: #31E7B6;
 	font-size: 4em;
 	border-bottom: 2px solid #31E7B6;
-}
+}*/
 
-.project-desc {
+/*.project-desc {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 500;
 	color: #E4F1FE;
@@ -187,18 +187,18 @@ body {
 	line-height: 1.2em;
 	display: block;
 	margin-top: 10px;
-}
+}*/
 
-.project-build {
+/*.project-build {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 300;
 	color: #E4F1FE;
 	font-size: 1.5em;
 	display: block;
 	margin-top: -15px;
-}
+}*/
 
-@media(max-width: 991px) {
+/*@media(max-width: 991px) {
 	.project-title {
 		font-size: 2em;
 	}
@@ -208,7 +208,7 @@ body {
 	.project-build {
 		font-size: 1em;
 	}
-}
+}*/
 /****************** FOOTER ******************/
 
 #footer{
@@ -264,7 +264,7 @@ body {
 /****************** buttons and icons ******************/
 .btn-visit,
 .btn-visit:focus {
-	font-family: 'Ubuntu', sans-serif;
+/*	font-family: 'Ubuntu', sans-serif;
 	font-weight: 400;
 	color: #3ee4c4;
 	background: transparent;
@@ -277,13 +277,13 @@ body {
 	box-shadow: inset 0 0 0 0 #3ee4c4;
 	-webkit-transition: all linear 0.3s;
 	-moz-transition: all linear 0.3s;
-	transition: all linear 0.3s;
+	transition: all linear 0.3s;*/
 }
 
 .btn-visit:hover  {
-	box-shadow: inset 100px -100px 0 0 #3ee4c4;
+/*	box-shadow: inset 100px -100px 0 0 #3ee4c4;
 	color: #000;
-	text-decoration: none;
+	text-decoration: none;*/
 }
 
 .fa-icon-custom {

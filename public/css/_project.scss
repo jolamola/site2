@@ -1,0 +1,78 @@
+/*     spit them bg images out!     */
+$bg-images:(aboutme,yc4,fi,photos);
+@each $image in $bg-images {
+	##{$image} {
+		background: url("../images/#{$image}.jpg");
+		@include bg-properties;
+	}
+}
+
+section#project-content {
+	position: relative;
+	padding: 0;
+	box-shadow: 0 0px 36px 0px rgba(0,0,0,0.8);
+	
+	div.menuContainer {
+		padding:0;
+
+		div.project-container{
+			min-height: 400px;
+			&:hover {
+				background-color: rgba(0,0,0,0.8);
+				@include transition(all linear 0.1s);
+				@include desktop-sm {
+					background-color: rgba(0,0,0,0.0);
+				}
+
+				div.project {
+					opacity: 1;
+					display: block;
+					@include desktop-sm {
+						opacity: 0;
+					}
+				}
+			}
+
+			div.project {
+				opacity:0;
+				padding: 50px 50px 0 50px;
+				@include project-details;
+
+			}
+		}
+	}
+
+	div.collapse_project {
+		@include desktop-lg {
+			display: none;
+		}
+		@include desktop-sm {
+			position: relative;
+			text-align: center;
+			background-color: $grey;
+			height: 250px;
+			padding: 15px 15px 15px 30px;
+		}
+		@include project-details;
+
+
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	transition: $args;	
+}
+@mixin ani-delay($args...) {
+	-webkit-animation-delay: $args;
+	animation-delay: $args;
+}
+@mixin bg-properties {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:auto;
+}
+
+
+
+
+
