@@ -225,6 +225,58 @@ section#project-content {
       color: #000;
       text-decoration: none; }
 
+section#footer {
+  background-color: #2F343A;
+  height: 200px; }
+  @media only screen and (max-width: 768px) {
+    section#footer div.footer-content {
+      display: none; } }
+  section#footer div.footer-content div.footer-contactme {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 50px; }
+    section#footer div.footer-content div.footer-contactme i {
+      color: #fff; }
+    section#footer div.footer-content div.footer-contactme a, section#footer div.footer-content div.footer-contactme a i {
+      color: #fff; }
+      section#footer div.footer-content div.footer-contactme a:hover, section#footer div.footer-content div.footer-contactme a i:hover {
+        color: #3ee4c4;
+        text-decoration: none; }
+  section#footer div.footer-content div.footer-proj {
+    margin-top: 10px;
+    display: block;
+    text-align: center; }
+    section#footer div.footer-content div.footer-proj a {
+      font-size: 1.5em;
+      color: #3ee4c4;
+      margin-right: 10px; }
+      section#footer div.footer-content div.footer-proj a:hover {
+        color: #fff;
+        text-decoration: none; }
+  section#footer div.collapse-footer {
+    display: none; }
+    @media only screen and (max-width: 768px) {
+      section#footer div.collapse-footer {
+        display: inline; }
+        section#footer div.collapse-footer ul {
+          text-align: center;
+          padding-top: 20px;
+          font-family: 'Ubuntu', sans-serif;
+          list-style: none;
+          font-size: 1.5em;
+          color: white; }
+        section#footer div.collapse-footer li a i {
+          color: #fff; }
+          section#footer div.collapse-footer li a i:hover {
+            color: #3ee4c4; }
+        section#footer div.collapse-footer li a {
+          color: #fff;
+          font-size: 1em; }
+          section#footer div.collapse-footer li a:hover {
+            color: #3ee4c4;
+            text-decoration: none; } }
+
 /*       GENERAL         */
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -232,5 +284,15 @@ h1, h2, h3, h4, h5, h6 {
 body {
   width: 100%;
   height: 100%; }
+
+/*gif for load screen*/
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../images/ajax_loader_gray_64.gif") center no-repeat #fff; }
 
 /*# sourceMappingURL=main.css.map */
