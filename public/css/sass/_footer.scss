@@ -1,0 +1,65 @@
+section#footer {
+	background-color: $bluegrey;
+	height: 200px;
+
+	div.footer-content {
+		@include footer-sm {display:none;}
+		div.footer-contactme {
+			color: $white;
+			font-size: 1.5em;
+			text-align: center;
+			padding-top: 50px;
+			i {color: $white;}
+			a, a i {
+				color: $white;
+				&:hover {
+					color: $teal;
+					text-decoration: none;
+				}
+			}
+		}
+		div.footer-proj {
+			margin-top: 10px;
+			display: block;
+			text-align: center;
+			a {
+				font-size: 1.5em;
+				color: $teal;
+				margin-right: 10px;
+				&:hover {
+					color: $white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	div.collapse-footer {
+		display: none;
+		@include footer-sm {
+			display: inline;
+			ul {
+				text-align: center;
+				padding-top: 20px;
+				font-family: 'Ubuntu', sans-serif;
+				list-style: none;
+				font-size: 1.5em;
+				color:white;
+			}
+			li a i {
+				color: $white;
+				&:hover {
+					color: $teal;
+				}
+			}
+			li a {
+				color: $white;
+				font-size: 1em;
+				&:hover {
+					color: $teal;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

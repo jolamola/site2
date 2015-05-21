@@ -1,0 +1,46 @@
+@mixin project-details {
+	span.project-title {
+		font: {
+			family: $ubuntu;
+			weight: 700;
+			size: 3em;
+		}
+		color: $teal;
+		border-bottom: 2px solid $teal;
+		@include desktop-sm {font-size: 2em;}				
+	}
+	span.project-desc {
+		font: {
+			family: $ubuntu;
+			weight: 500;
+			size: 2em;
+		}
+		color: $offwhite;
+		line-height: 1.2em;
+		display: block;
+		margin-top: 10px;
+		@include desktop-sm {font-size: 1.5em;}
+	}
+	span.project-build {
+		font: {
+			family: $ubuntu;
+			weight: 300;
+			size: 1.5em;
+		}
+		color: $offwhite;
+		display: block;
+		margin-top: -15px;
+		@include desktop-sm {font-size: 1em;}
+	}
+	a {
+		color: $teal; 
+		i {
+			color: $offwhite;
+			&:hover {
+				color: $teal;
+				@include transition(all linear 0.2s)
+			}
+		}
+	}
+	@include btn-main;
+}
