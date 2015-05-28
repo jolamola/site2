@@ -1,4 +1,4 @@
-// @mixin btn-main {
+@mixin btn-main {
 	.btn-main,
 	.btn-main:focus {
 		font: {
@@ -21,104 +21,102 @@
 			text-decoration: none;
 		}
 	}
-// }
+}
 
-$bgColor: #404040;
-$white: #fff;
-$purp: #8e44ad;
+
+
 
 @mixin transition($args...) {
-  -webkit-transition: $args;
-  transition: $args;
+	-webkit-transition: $args;
+	transition: $args;
 }
 @mixin transition-delay($args...){
-  -webkit-transition-delay: $args;
-  transition-delay: $args;
+	-webkit-transition-delay: $args;
+	transition-delay: $args;
 }
 @mixin translateX($args...) {
-  -webkit-transform: translateX($args);
-  transform: translateX($args);
+	-webkit-transform: translateX($args);
+	transform: translateX($args);
 }
 @mixin translateY($args...) {
-  -webkit-transform: translateY($args);
-  transform: translateY($args); 
+	-webkit-transform: translateY($args);
+	transform: translateY($args); 
 }
 
 
 
 
 .btn {
-  width: 150px;
-  height: 50px;
-  background: $bgColor;
-  position: relative;
-  display: inline-block;
-  margin: 20px;
-  cursor: pointer;
-  text-align: center;
-  &:hover {
-    p {
-      color: $white;
-      letter-spacing: 1px;
-      font-weight: bold;
-    }
-  }
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0; 
-  }
-  p {
-    font: {
-      family: 'Lato', sans-serif;
-      weight: 800;
-      size: 24px;
-    }
-    color: $purp;
-    line-height: 48px;
-    letter-spacing: 0;
-    margin: 0;
-    width: 100%;
-  }
-  line {
-    stroke-width: 4;
-    stroke: $purp;
-  }
+	width: 300px;
+	height: 50px;
+	background: transparent;
+	position: relative;
+	display: block;
+	margin: 50px auto;
+	cursor: pointer;
+	text-align: center;
+	&:hover {
+		p {
+			color: $teal;
+			letter-spacing: 2px;
+			font-weight: bold;
+		}
+	}
+	svg {
+		position: absolute;
+		top: 0;
+		left: 0; 
+	}
+	p {
+		font: {
+			family: 'Lato', sans-serif;
+			weight: 800;
+			size: 24px;
+		}
+		color: $white;
+		line-height: 48px;
+		letter-spacing: 1;
+		margin: 0;
+		width: 100%;
+	}
+	line {
+		stroke-width: 4;
+		stroke: $white;
+	}
 }
 
-  .btn6 {
-    @extend .btn;
-    @include transition(background 0.4s ease-in);
-    &:hover {
-      @include transition-delay(0s);
-      svg line.top {
-        @include translateX(-150px);
-      }
-      svg line.bottom {
-        @include translateX(150px);
-      }
-      svg line.left {
-        @include translateY(100px);
-      }
-      svg line.right {
-        @include translateY(-100px);
-      }
-    }
+.btn3 {
+	@extend .btn;
 
-    p {
-      @include transition(all 0.2s ease-in-out);
-    }
+	&:hover {
+		@include transition-delay(0s);
+		svg line.top {
+			@include translateX(-600px);
+		}
+		svg line.bottom {
+			@include translateX(600px);
+		}
+		svg line.left {
+			@include translateY(50px);
+		}
+		svg line.right {
+			@include translateY(-50px);
+		}
+	}
 
-    svg {
-      line {
-        @include transition(all .2s ease-in-out);
-      }
+	p {
+		@include transition(all .3s ease-in-out);
+	}
 
-      line.top, line.bottom {
-        stroke-dasharray: 25 125;
-      }
-      line.left, line.right {
-        stroke-dasharray: 75 25;
-      }
-    }
-  }
+	svg {
+		line {
+			@include transition(all .3s ease-in-out);
+		}
+		line.top, line.bottom {
+			stroke-dasharray: 300;
+		}
+		line.left, line.right {
+			stroke-dasharray: 50;
+		}
+	}
+}
