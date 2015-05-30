@@ -23,35 +23,12 @@
 	}
 }
 
-
-
-
-// @mixin transition($args...) {
-// 	-webkit-transition: $args;
-// 	transition: $args;
-// }
-// @mixin transition-delay($args...){
-// 	-webkit-transition-delay: $args;
-// 	transition-delay: $args;
-// }
-// @mixin translateX($args...) {
-// 	-webkit-transform: translateX($args);
-// 	transform: translateX($args);
-// }
-// @mixin translateY($args...) {
-// 	-webkit-transform: translateY($args);
-// 	transform: translateY($args); 
-// }
-
-
-
 .btn {
 	width: 300px;
 	height: 50px;
 	background: transparent;
 	position: relative;
 	display: block;
-	margin: 50px auto;
 	cursor: pointer;
 	text-align: center;
 	&:hover {
@@ -68,7 +45,7 @@
 	}
 	p {
 		font: {
-			family: 'Lato', sans-serif;
+			family: 'Ubuntu', sans-serif;
 			weight: 800;
 			size: 24px;
 		}
@@ -86,6 +63,7 @@
 
 .btn3 {
 	@extend .btn;
+	margin: 50px auto;
 
 	&:hover {
 		@include transition-delay(0s);
@@ -119,3 +97,43 @@
 		}
 	}
 }
+.btn6 {
+    @extend .btn;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+
+    @include transition(background 0.4s ease-in);
+    &:hover {
+      @include transition-delay(0s);
+      svg line.top {
+        @include translateX(-150px);
+      }
+      svg line.bottom {
+        @include translateX(150px);
+      }
+      svg line.left {
+        @include translateY(100px);
+      }
+      svg line.right {
+        @include translateY(-100px);
+      }
+    }
+
+    p {
+      @include transition(all 0.2s ease-in-out);
+    }
+
+    svg {
+      line {
+        @include transition(all .2s ease-in-out);
+      }
+
+      line.top, line.bottom {
+        stroke-dasharray: 25 125;
+      }
+      line.left, line.right {
+        stroke-dasharray: 75 25;
+      }
+    }
+  }

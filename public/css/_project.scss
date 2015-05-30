@@ -54,12 +54,16 @@ section#project-content {
 			padding: 15px 15px 15px 30px;
 		}
 		@include project-details;
-
-
-
+		a {
+			margin: 10px auto;
+		}
 	}
 }
 
+
+#aboutme {
+
+}
 
 
 

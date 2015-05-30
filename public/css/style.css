@@ -2,25 +2,24 @@
 @import url(https://fonts.googleapis.com/css?family=Sacramento|Chelsea+Market);
 /*    Colors      */
 /*     Fonts       */
-.btn, .btn3 {
+.btn, .btn3, .btn6 {
   width: 300px;
   height: 50px;
   background: transparent;
   position: relative;
   display: block;
-  margin: 50px auto;
   cursor: pointer;
   text-align: center; }
-  .btn:hover p, .btn3:hover p {
+  .btn:hover p, .btn3:hover p, .btn6:hover p {
     color: #3ee4c4;
     letter-spacing: 2px;
     font-weight: bold; }
-  .btn svg, .btn3 svg {
+  .btn svg, .btn3 svg, .btn6 svg {
     position: absolute;
     top: 0;
     left: 0; }
-  .btn p, .btn3 p {
-    font-family: 'Lato', sans-serif;
+  .btn p, .btn3 p, .btn6 p {
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 800;
     font-size: 24px;
     color: #fff;
@@ -28,37 +27,74 @@
     letter-spacing: 1;
     margin: 0;
     width: 100%; }
-  .btn line, .btn3 line {
+  .btn line, .btn3 line, .btn6 line {
     stroke-width: 4;
     stroke: #fff; }
 
-.btn3:hover {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s; }
-  .btn3:hover svg line.top {
-    -webkit-transform: translateX(-600px);
-    transform: translateX(-600px); }
-  .btn3:hover svg line.bottom {
-    -webkit-transform: translateX(600px);
-    transform: translateX(600px); }
-  .btn3:hover svg line.left {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px); }
-  .btn3:hover svg line.right {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px); }
-.btn3 p {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-.btn3 svg line {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-.btn3 svg line.top, .btn3 svg line.bottom {
-  stroke-dasharray: 300; }
-.btn3 svg line.left, .btn3 svg line.right {
-  stroke-dasharray: 50; }
+.btn3 {
+  margin: 50px auto; }
+  .btn3:hover {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+    .btn3:hover svg line.top {
+      -webkit-transform: translateX(-600px);
+      transform: translateX(-600px); }
+    .btn3:hover svg line.bottom {
+      -webkit-transform: translateX(600px);
+      transform: translateX(600px); }
+    .btn3:hover svg line.left {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px); }
+    .btn3:hover svg line.right {
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px); }
+  .btn3 p {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .btn3 svg line {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .btn3 svg line.top, .btn3 svg line.bottom {
+    stroke-dasharray: 300; }
+  .btn3 svg line.left, .btn3 svg line.right {
+    stroke-dasharray: 50; }
+
+.btn6 {
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  -webkit-transition: background 0.4s ease-in;
+  -moz-transition: background 0.4s ease-in;
+  transition: background 0.4s ease-in; }
+  .btn6:hover {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+    .btn6:hover svg line.top {
+      -webkit-transform: translateX(-150px);
+      transform: translateX(-150px); }
+    .btn6:hover svg line.bottom {
+      -webkit-transform: translateX(150px);
+      transform: translateX(150px); }
+    .btn6:hover svg line.left {
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px); }
+    .btn6:hover svg line.right {
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px); }
+  .btn6 p {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .btn6 svg line {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .btn6 svg line.top, .btn6 svg line.bottom {
+    stroke-dasharray: 25 125; }
+  .btn6 svg line.left, .btn6 svg line.right {
+    stroke-dasharray: 75 25; }
 
 section#intro {
   position: relative;
@@ -203,27 +239,6 @@ section#project-content {
               -webkit-transition: all linear 0.2s;
               -moz-transition: all linear 0.2s;
               transition: all linear 0.2s; }
-        section#project-content div.menuContainer div.project-container div.project .btn-main,
-        section#project-content div.menuContainer div.project-container div.project .btn-main:focus {
-          font-family: "Ubuntu", sans-serif;
-          font-weight: 400;
-          font-color: #3ee4c4;
-          font-size: 20px;
-          background: transparent;
-          border: 1px solid #3ee4c4;
-          border-radius: 2px;
-          padding: 15px 30px;
-          text-transform: uppercase;
-          text-decoration: none;
-          box-shadow: inset 0 0 0 0 #3ee4c4;
-          -webkit-transition: all linear 0.2s;
-          -moz-transition: all linear 0.2s;
-          transition: all linear 0.2s; }
-          section#project-content div.menuContainer div.project-container div.project .btn-main:hover,
-          section#project-content div.menuContainer div.project-container div.project .btn-main:focus:hover {
-            box-shadow: inset 100px -100px 0 0 #3ee4c4;
-            color: #000;
-            text-decoration: none; }
   @media only screen and (min-width: 992px) {
     section#project-content div.collapse_project {
       display: none; } }
@@ -273,27 +288,8 @@ section#project-content {
         -webkit-transition: all linear 0.2s;
         -moz-transition: all linear 0.2s;
         transition: all linear 0.2s; }
-  section#project-content div.collapse_project .btn-main,
-  section#project-content div.collapse_project .btn-main:focus {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-color: #3ee4c4;
-    font-size: 20px;
-    background: transparent;
-    border: 1px solid #3ee4c4;
-    border-radius: 2px;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-    box-shadow: inset 0 0 0 0 #3ee4c4;
-    -webkit-transition: all linear 0.2s;
-    -moz-transition: all linear 0.2s;
-    transition: all linear 0.2s; }
-    section#project-content div.collapse_project .btn-main:hover,
-    section#project-content div.collapse_project .btn-main:focus:hover {
-      box-shadow: inset 100px -100px 0 0 #3ee4c4;
-      color: #000;
-      text-decoration: none; }
+  section#project-content div.collapse_project a {
+    margin: 10px auto; }
 
 section#footer {
   background-color: #2F343A;

@@ -33,7 +33,7 @@
 		@include desktop-sm {font-size: 1em;}
 	}
 	a {
-		color: $teal; 
+		color: $teal;
 		i {
 			color: $offwhite;
 			&:hover {
@@ -42,5 +42,5 @@
 			}
 		}
 	}
-	@include btn-main;
+	// @include btn-main;
 }
