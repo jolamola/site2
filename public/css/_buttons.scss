@@ -26,23 +26,22 @@
 
 
 
-@mixin transition($args...) {
-	-webkit-transition: $args;
-	transition: $args;
-}
-@mixin transition-delay($args...){
-	-webkit-transition-delay: $args;
-	transition-delay: $args;
-}
-@mixin translateX($args...) {
-	-webkit-transform: translateX($args);
-	transform: translateX($args);
-}
-@mixin translateY($args...) {
-	-webkit-transform: translateY($args);
-	transform: translateY($args); 
-}
-
+// @mixin transition($args...) {
+// 	-webkit-transition: $args;
+// 	transition: $args;
+// }
+// @mixin transition-delay($args...){
+// 	-webkit-transition-delay: $args;
+// 	transition-delay: $args;
+// }
+// @mixin translateX($args...) {
+// 	-webkit-transform: translateX($args);
+// 	transform: translateX($args);
+// }
+// @mixin translateY($args...) {
+// 	-webkit-transform: translateY($args);
+// 	transform: translateY($args); 
+// }
 
 
 
